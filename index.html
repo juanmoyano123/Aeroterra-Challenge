@@ -1,53 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="https://js.arcgis.com/4.24/esri/themes/light/main.css">
+    <link
+      rel="stylesheet"
+      href="https://js.arcgis.com/4.24/esri/themes/light/main.css"
+    />
     <script src="https://js.arcgis.com/4.24/"></script>
-    <link rel="stylesheet" href="stylesheet.css">
-    
+    <link rel="stylesheet" href="stylesheet.css" />
+
     <title>ARCgis API Js</title>
-</head>
-<body>
+  </head>
+  <body>
+    <header class="title">
+      <h1>Aeroterra</h1>
+    </header>
 
-        <header class="title">
-    <h1 >Aeroterra</h1>
-        </header>
+    <div class="sectionone">
+      <form class="form" id="transactionForm" action="#">
+        <input
+          type="text"
+          placeholder="Description..."
+          name="description"
+          id="description"
+        />
+        <input type="text" placeholder="Adress..." name="adress" id="adress" />
+        <input type="number" placeholder="Phone..." name="phone" id="phone" />
+        <input
+          type="text"
+          name="coordinates"
+          placeholder="(CoordinateX..., CoordinateY...)"
+          id="coordinates"
+        />
 
-<div class="sectionone" >
-    <form class="form" action="~">
-        <label for="description">Description:<input type="text" name="description" id="description"/></label>
-        <label for="Adress">Adress:<input type="text" name="adress" id="adress"/></label>
-        <label for="Phone">Phone:<input type="number" name="phone" id="phone"/></label>
-        <label for="Coordinates">Coordinates:<input type="text" name="coordinates" id="coordinates"/></label>
-        <label for="Select">Type:
         <select name="Type" id="type" form="Type">
-            <option value="Comercial">Comercial</option>
-            <option value="Residential">Residential</option>
-            <option value="Mixed">Mixed</option>
+          <option value="Comercial" selected disabled>Select Type</option>
+          <option value="Comercial">Comercial</option>
+          <option value="Residential">Residential</option>
+          <option value="Mixed">Mixed</option>
         </select>
-        </label>
-        <input type="submit" value="Submit">                                                              
-    </form>
 
-   
-    <div id="viewDiv">
+        <button id="handleSubmit" value="Submit">Submit</button>
+      </form>
+
+      <div id="viewDiv"></div>
+
+      <div class="poi">
+        <h3>Points of Interes</h3>
+        <ol></ol>
+      </div>
     </div>
 
-
-<div class="poi">
-    <h3>Points of Interes</h3>
-
-</div>
-</div>
-
-
-
     <script src="https://js.arcgis.com/4.24/"></script>
-    <script src="main.js"></script>    
-
-</body>
+    <script src="main.js"></script>
+  </body>
 </html>
