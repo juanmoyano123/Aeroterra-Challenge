@@ -3,20 +3,68 @@
   height: 29.5rem;
 }
 
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20vh;
+  background-color: rgb(241, 241, 151);
+}
+
+h1 {
+  font-size: 6rem;
+}
+
 .sectionone {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  min-height: 70vh;
+  background-color: beige;
+  padding: 1rem;
+}
+
+.footer {
+  height: 10vh;
+  display: flex;
+  flex-direction: row !important;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  gap: 2rem;
+  background-color: rgba(218, 218, 97, 0.637);
 }
 
 .form {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  width: 20vw;
+  width: 25vw;
   height: 25rem;
   gap: 1rem;
   border: 2px solid black;
   padding: 2rem;
   background-color: beige;
+}
+
+.mapView {
+  width: 25vw;
+}
+
+.poi {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid black;
+  background-color: beige;
+  width: 25vw;
+  min-height: 80%;
+}
+
+.poiItemList,
+h3 {
+  text-align: center;
+}
+
+.img {
+  height: 5rem;
 }
